@@ -1,6 +1,6 @@
 Installation:
 
-git clone https://github.com/northerlyfrog/dotfiles.git ~/.vimrc
+git clone https://github.com/northerlyfrog/dotfiles.git ~/.vim
 
 Create symlinks:
 
