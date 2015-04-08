@@ -19,6 +19,9 @@ set nocompatible
 " Add runtime path manipulation for pathogen
 execute pathogen#infect()
 
+" Call some more pathogen files
+call pathogen#helptags()
+
 set background=dark " set the background to dark
 
 " Disable nerdtree on startup
