@@ -61,8 +61,6 @@ runtime ftplugin/man.vim
 
 set autoindent " Turn autoindent on
 
-set expandtab " expands tab to spaces
-
 set wrap
 set linebreak
 set nolist "list disables linebreak
