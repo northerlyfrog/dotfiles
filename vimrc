@@ -185,7 +185,7 @@ set ignorecase
 set smartcase
 
 " Set scrolloff options
-set scrolloff=10
+set scrolloff=30
 
 " Set wildmode up
 set wildmode=longest,list
@@ -217,6 +217,9 @@ inoremap <C-U> <C-G>u<C-U>
 if has('mouse')
 	set mouse=a
 endif
+
+" Set up proper crontab management
+autocmd filetype crontab setlocal nobackup nowritebackup
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
@@ -270,6 +273,12 @@ if bufwinnr(1)
 	map <kMultiply> <c-w>>
 endif
 
+" Stop my bad arrow key habit
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
+
 " Remap navigation between splits keystrokes
 " Instead of ctrl-w then j, it's just ctrl-j
 nnoremap <C-J> <C-W><C-J>
@@ -298,6 +307,10 @@ if &diff
 
 	" disable cursorline
 	set nocursorline
+
+	" inserts empty lines for sync so nothing is hidden
+	set diffopt=filler,context:1000000
+
 endif
 
 set showtabline=2  " 0, 1 or 2; when to use a tab pages line
