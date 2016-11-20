@@ -36,6 +36,7 @@ Plugin 'tpope/vim-surround'
 "Plugin 'Shougo/neocomplete.vim'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-scripts/Conque-Shell'
+Plugin 'ekalinin/Dockerfile.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -52,6 +53,8 @@ filetype plugin indent on    " required
 set background=dark " set the background to dark
 let g:neocomplete#enable_at_startup = 1
 
+let g:airline_powerline_fonts = 1
+
 " Open nerdtree automatically if no files are specified
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
@@ -60,8 +63,9 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 " Shortcut for opening NERDTree
+let NERDTreeMirror = 1
+let NERDTreeQuitOnOpen = 1
 map <C-m> : NERDTreeToggle<CR>
-map <C-CR> : NERDTreeMapActivateNode<CR>
 
 " Set up syntastic Checkers
 

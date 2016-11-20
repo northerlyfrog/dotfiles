@@ -1,11 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =9
-let g:netrw_dirhist_1='/Users/Bryan/.vim/colors'
-let g:netrw_dirhist_2='/Users/Bryan'
-let g:netrw_dirhist_3='/Users/Bryan/Desktop'
-let g:netrw_dirhist_4='/Users/Bryan/Desktop/shared'
-let g:netrw_dirhist_5='/Users/Bryan'
-let g:netrw_dirhist_6='/Users/Bryan/Desktop'
-let g:netrw_dirhist_7='/Users/Bryan/Desktop/shared'
-let g:netrw_dirhist_8='/Users/Bryan/Desktop/shared/Activations'
-let g:netrw_dirhist_9='/Users/Bryan/Desktop/shared/Activations/2014'
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/Users/Bryan/Desktop/Shared/Projects/alert-server'
+let g:netrw_dirhist_2='/Users/Bryan/Desktop/Shared/Projects/alert-server/lib'
+let g:netrw_dirhist_3='/Users/Bryan/Desktop/Shared/Projects/alert-server'
+let g:netrw_dirhist_4='/Users/Bryan/Desktop/Shared/Projects/alert-server/lib'
+let g:netrw_dirhist_5='/Users/Bryan/Desktop/Shared/Projects/alert-server/lib/A91Alert'
