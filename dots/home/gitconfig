@@ -1,0 +1,24 @@
+[user]
+	email = bryan.walcott@active911.com
+	name = Northerlyfrog
+[push]
+	default = matching
+[filter "media"]
+	clean = git media clean %f
+	smudge = git media smudge %f
+	required = true
+[core]
+	editor = vim
+
+[merge]
+	tool = threesome
+
+[mergetool "threesome"]
+	cmd = "mvim -f $BASE $LOCAL $REMOTE $MERGED -c 'ThreesomeInit'"
+	trustExitCode = true
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+[diff]
+	tool = vimdiff
