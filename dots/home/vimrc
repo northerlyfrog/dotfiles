@@ -44,12 +44,6 @@ filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
 
-" Add runtime path manipulation for pathogen
-" execute pathogen#infect()
-
-" Call some more pathogen files
-" call pathogen#helptags()
-
 set background=dark " set the background to dark
 let g:neocomplete#enable_at_startup = 1
 
@@ -87,7 +81,6 @@ colorscheme spacegray
 
 " Use the OS clipboard by default (when available)
 set clipboard=unnamed
-
 
 " Set syntax on
 syntax enable 

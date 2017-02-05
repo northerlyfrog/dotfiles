@@ -7,8 +7,8 @@ fi
 
 # remove old dot files
 rm ~/.gitconfig
-rm ~/.gitignore_global
-rm ~/.tmux.conf
+#rm ~/.gitignore_global
+#rm ~/.tmux.conf
 rm ~/.vimrc
 rm ~/.zshrc
 
