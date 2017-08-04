@@ -37,10 +37,6 @@ export CLICOLOR=1;
 export EDITOR='vim'
 export PAGER='less'
 
-#Load bullet-train, set the theme
-zgen load caiogondim/bullet-train-oh-my-zsh-theme bullet-train
-zgen save
-ZSH_THEME="bullet-train" #"geometry"
 
 if [ ! $TERM = dumb ]; then
 	ZGEN_AUTOLOAD_COMPINIT=true
@@ -89,6 +85,11 @@ if [ ! $TERM = dumb ]; then
 	fi
 
 fi
+
+#Load bullet-train, set the theme
+zgen load caiogondim/bullet-train-oh-my-zsh-theme bullet-train
+zgen save
+ZSH_THEME="bullet-train" #"geometry"
 
 #Establish environmental variables
 # Path to your oh-my-zsh installation.
