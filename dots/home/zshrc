@@ -87,13 +87,13 @@ if [ ! $TERM = dumb ]; then
 fi
 
 #Load bullet-train, set the theme
+zgen oh-my-zsh
 zgen load caiogondim/bullet-train-oh-my-zsh-theme bullet-train
-zgen save
 ZSH_THEME="bullet-train" #"geometry"
 
 #Establish environmental variables
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/Bryan/.oh-my-zsh
+export ZSH=/Users/bryan/.oh-my-zsh
 
 # Path to mysql's installation
 export PATH=$PATH:/usr/local/mysql/bin

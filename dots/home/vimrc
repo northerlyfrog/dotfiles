@@ -37,6 +37,7 @@ Plugin 'tpope/vim-surround'
 "Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-scripts/Conque-Shell'
 Plugin 'ekalinin/Dockerfile.vim'
+Plugin 'powerline/powerline-fonts'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -125,6 +126,7 @@ set encoding=utf-8 nobomb
 " Centralize backups, swapfiles and undo history
 set backupdir=~/.vim/backups
 set directory=~/.vim/swaps
+
 if exists("&undodir")
 	set undodir=~/.vim/undo
 endif

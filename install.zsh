@@ -19,5 +19,7 @@ ln ~/.dotfiles/dots/home/gitconfig               ~/.gitconfig
 ln ~/.dotfiles/dots/home/vimrc                   ~/.vimrc
 ln ~/.dotfiles/dots/home/zshrc                   ~/.zshrc
 
+cp ~/.dotfiles/dots/home/bullet-train.zsh-theme  ~/.oh-my-zsh/themes/bullet-train.zsh-theme
+
 # install powerline fonts
 ~/.dotfiles/powerline-fonts/install.sh
