@@ -5,6 +5,20 @@ if [ ! "$SHELL" = "/bin/zsh" ]; then
   chsh -s /bin/zsh
 fi
 
+echo "Checking for homebrew..."
+# Check for Homebrew, install if we don't have it
+if test ! $(which brew); then
+    echo "Installing homebrew..."
+    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+		
+		# Update homebrew recipes
+		brew update
+
+		brew install vim --with-lua --override-system-vi
+
+
+	fi
+
 # remove old dot files
 rm ~/.gitconfig
 #rm ~/.gitignore_global
